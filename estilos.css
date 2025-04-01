@@ -1,0 +1,118 @@
+:root {
+    --color-amor: #ff2d75;
+    --color-fondo: #fff0f5;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    background: var(--color-fondo);
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #ffcce6, #ff99cc);
+    border-bottom: 5px dashed var(--color-amor);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: var(--color-amor);
+    text-shadow: 2px 2px 0 #fff;
+}
+
+.corazon {
+    font-size: 3rem;
+    animation: latido 1s infinite alternate;
+    margin-top: 20px;
+}
+
+@keyframes latido {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+#razones-container {
+    padding: 20px;
+}
+
+.razon {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 rgba(255, 45, 117, 0.3);
+    border: 3px solid var(--color-amor);
+    position: relative;
+    font-size: 1.2rem;
+    transform: rotate(0.5deg);
+    transition: all 0.3s;
+}
+
+.razon:nth-child(even) {
+    transform: rotate(-0.5deg);
+    background: #fffff0;
+}
+
+.razon:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 10px 10px 0 rgba(255, 45, 117, 0.5);
+}
+
+.razon::before {
+    content: "❤️";
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    font-size: 1.5rem;
+}
+
+#mensaje-secreto {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,0.8);
+    text-align: center;
+    z-index: 1000;
+    max-width: 80%;
+}
+
+#mensaje-secreto h2 {
+    color: var(--color-amor);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.oculto {
+    display: none !important;
+}
+
+#cerrar-mensaje {
+    background: var(--color-amor);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Efectos responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .razon {
+        padding: 15px;
+        margin: 15px 10px;
+    }
+}
