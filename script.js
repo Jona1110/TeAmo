@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Por cómo me haces reír",
         "Por tus ojos lindos",
           "Por tus abrazos",
-        "Por ser mi mejor amigo/a",
+        "Por ser mi mejor amiga",
         "Por tu corazón grande",
         "Por cómo me escuchas",
         "Por tus locuras",
