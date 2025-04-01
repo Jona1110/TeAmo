@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ? razones[Math.floor(Math.random() * razones.length)]
             : `Te amo porque eres única en ${Math.random().toString(36).substring(7)}`;
         
-   razon.textContent = `Te amo porque ${razonTexto.toLowerCase()}`;
+   razon.textContent = ${razonTexto.toLowerCase()}`;
         razonesContainer.appendChild(razon);
         
         // Añade estilos aleatorios para diversión
