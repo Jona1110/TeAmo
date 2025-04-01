@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
              // Easter egg secreto después de 100 razones
-            if (contadorRazones > 100 && !localStorage.getItem('easterEggVisto')) {
+            if (contadorRazones > 50 && !localStorage.getItem('easterEggVisto')) {
                 mensajeSecreto.classList.remove('oculto');
                 localStorage.setItem('easterEggVisto', 'true');
             }
